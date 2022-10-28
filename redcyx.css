@@ -1,0 +1,317 @@
+body{
+    font-family: 15px/1.5 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:rgb(253, 253, 253);
+    margin: 0;
+    padding:0
+}
+
+/* Global */
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    padding: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: palevioletred;
+}
+
+a:hover{
+    color: brown;
+}
+
+a:active{
+    color: white;
+}
+
+a:visited{
+    color:pink;
+}
+
+button{
+    width: 15px;
+    height: 30px;
+    background-color: green;
+    color: whitesmoke;
+}
+
+button:hover{color: brown;}
+
+.clr{
+    clear: both;
+}
+
+.scroll{
+    float: right;
+    height: 10px;
+    width: 15%;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Header */
+header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: red 2px solid;
+    position: fixed;
+    transition: 0.3s;
+}
+
+header a{
+    color: white ;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 7px 0 7px;
+}
+
+header #branding{
+    float: left;
+}
+
+header img{
+    margin: 0;
+    width: 250px;
+    height: 100px;
+}
+
+header nav{
+    float: right;
+    margin-top: 30px;
+}
+
+header .current a{
+    color: red;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: brown;
+    font-weight: bold;
+}
+
+/* Trivia */
+#trivia{
+    min-height: 150px;
+    padding-top: 150px;
+    border-bottom: red 2px solid;
+}
+
+#trivia h1{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#trivia p{
+    text-align: center;
+    padding-top: 20px
+}
+
+/* Recent Releases */
+#releases{
+    min-height: 200px;
+    background-color: black;
+    color: white;
+    border-bottom: red 2px solid;
+}
+
+#releases h1{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#releases ul{
+    list-style-image: url(../images/fire.png);
+    margin: 0;
+    padding-top:20px;
+}
+
+/* Scheduled Releases */
+#schedule{
+    min-height: 200px;
+    border-bottom: red 2px solid;
+}
+
+#schedule h1{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#schedule ul{
+    list-style-image: url(../images/tick.PNG);
+    margin: 0;
+}
+
+/* Upcoming Projects */ 
+#projects{
+    background-color: black;
+    color: white;
+    min-height: 200px;
+    border-bottom: red 2px solid;
+}
+
+#projects h1{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#projects ul{
+    list-style-image: url(../images/bullet.png);
+    margin: 0;
+}
+
+
+/* Form */
+#contact{
+    min-height: 150px;
+    border-bottom: black 2px solid;
+    border-right: black 2px solid;
+    /*border-radius: 25px;*/
+    float: left;
+    width: 50%;
+    background-color: brown;
+}
+
+#contact h1{
+    font-style: italic;
+    font-weight: bold;
+}
+
+#contact .myformlabel{
+    display: block;
+}
+
+#contact form input[type="text"],[type="email"], [type="tel"]{
+    width: 300px;
+    padding: 4px;
+    height: 25px;
+}
+
+#contact form select{
+    width: 250px;
+    padding: 4px;
+    height: 15px;
+}
+
+#contact form textarea{
+    width: 300px;
+    padding: 4px;
+    height: 40px;
+}
+
+#contact .submit{
+    border-radius: 12px;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+
+/* Social Media */
+#sidebar .container{
+    display: flex;
+    justify-content: center;
+    min-height: 50px;
+    float: right;
+    width: 100%;
+    border-radius: 0 50%;
+    background-color: brown;
+}
+
+#sidebar h1{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#sidebar li{
+    display: inline;
+    padding: 5px;
+}
+
+/* Footer */
+footer{
+    min-height: 25px;
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+footer h4{
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer p{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0;
+    padding: 30 0 0 0;
+}
+
+footer p a{
+    color: yellowgreen;
+}
+
+@media(max-width:600px){
+   #contact{
+    width: 100%;
+    float: none;
+   }
+
+   #sidebar{
+    width: 100%;
+    float: none;
+   }
+
+   header #branding, nav{
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 5px;
+   }
+
+   #trivia{
+    padding-top: 250px;
+   }
+
+   #contact form input[type="text"], [type="tel"], [type="email"], textarea, select{
+    width: 80%;
+   }
+
+   #contact form textarea{
+    width: 80%;
+   }
+
+   #contact form select{
+    width: 80%;
+   }
+}
